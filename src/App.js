@@ -1,7 +1,7 @@
 import './App.css';
-import {NavBar} from './components';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import {Home, About, Login, ErrorPage} from './pages';
+import { NavBar } from './components';
 
 function App() {
   return (

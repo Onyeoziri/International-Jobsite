@@ -25,24 +25,24 @@ const Header = () => {
           <p className="u-text-small">
             Our wedsite helps ...................
           </p>
-          <div className="header-cta">
+          {/* <div className="header-cta">
           <input type="text" placeholder="Name" />
 
 
             <Button text={"Sign Up"} btnClass={"btn-light"} href={"#"} />
-          </div>
+          </div> */}
           <div className="header-cta">
           <input type="text" placeholder="Email" />
 
 
             <Button text={"Sign Up"} btnClass={"btn-light"} href={"#"} />
           </div>
-          <div className="header-cta">
+          {/* <div className="header-cta">
           <input type="text" placeholder="Pasword" />
 
 
             <Button text={"Sign Up"} btnClass={"btn-light"} href={"#"} />
-          </div>
+          </div> */}
         </div>
         <div className="header-right" data-aos="fade-left">
           <img src={phoneHeader} alt="phone" />

@@ -1,0 +1,28 @@
+.hero{
+    display: block;
+    align-items: center;
+    margin: 0 -5vw;
+    margin-bottom: 2vh;
+
+
+    height: 70vh;
+    width: 100vw;
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 70%;
+    }
+
+    h1{
+        position: absolute;
+        z-index: 1;
+        color: white;
+        font-size: clamp(1.5rem, 2.34vw + 0.53rem, 5rem);
+        left: 5vw;
+        top: 40%;
+        font-size: 8rem;
+        
+    }
+}

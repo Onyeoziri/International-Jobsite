@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import { NavLink as button } from 'react-router-dom'
-import loginImg from '../../assets/login1.svg'
+
+import loginImg from '../../assets/login1.jpeg'
 import './login.scss'
 
 function Login() {
-  const [isStudent, setIsStudent] = useState(null)
+  const [isStudent, setIsStudent] = useState('student')
 
   const toggleStudentOption = (selection) => {
     setIsStudent(selection)
@@ -22,7 +22,7 @@ function Login() {
        
        <ul>
         <li>
-          <button onClick={(v) => toggleStudentOption('student')} 
+          <button onClick={() => toggleStudentOption('student')} 
             className={(isStudent ==='student') && ('selected')}>
               Student
           </button> 
@@ -46,7 +46,7 @@ function Login() {
           </label>
           <input type='password' className='uInput'/>
 
-          <input type='submit' className='subButton'/>
+          <button type='submit' className='subButton'>Login</button>
         </form>
 
 

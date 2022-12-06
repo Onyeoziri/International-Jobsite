@@ -43,6 +43,14 @@
                 position: relative;
             }
 
+            button {
+                border-radius: .2em;
+                border: none;
+                background-color: transparent;
+                &:hover{
+                    background: -webkit-linear-gradient(top, hsla(206,70%,70%,0) 60%,rgba(179, 113, 189, 0.251) 100%);
+                }
+            }
             
         }
 
@@ -85,21 +93,15 @@
 
             .subButton{
                 height: 3rem;
-                width: 5rem;
+                width: 9rem;
+                background-color: hsl(55, 87%, 85%);
             }
         }
 
         
     }
 
-    button {
-        border-radius: .2em;
-        border: none;
-        background-color: transparent;
-        &:hover{
-            background: -webkit-linear-gradient(top, hsla(206,70%,70%,0) 60%,rgba(179, 113, 189, 0.251) 100%);
-        }
-    }
+    
     
     .selected{
         border-bottom: 2px solid $accent-color;

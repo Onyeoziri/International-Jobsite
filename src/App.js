@@ -1,7 +1,7 @@
 import './App.scss';
 import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import {Home, Companies, CareerBuilder, Login, ErrorPage} from './pages';
-import { NavBar } from './components';
+import { Footer, NavBar } from './components';
 
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
     <div className="App">
     <BrowserRouter>
         <NavBar/>
+        
         <Routes>
           <Route exact path='/' element={<Navigate to='/home' />} />
           <Route path='/home' element={<Home />} />
@@ -19,8 +20,11 @@ function App() {
           <Route path='*' element={<ErrorPage />} />
 
         </Routes>
+
+        <Footer/>
         
       </BrowserRouter>
+
     </div>
   );
 }

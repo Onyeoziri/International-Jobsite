@@ -1,0 +1,124 @@
+@import "../../App.scss";
+
+.login{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: -8vh -5vw;
+
+    
+
+    .imgContainer{
+
+        position: block;
+        width: 60%;
+        height: 101vh;
+
+        .loginImg{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: 50% bottom;
+        }
+
+    }
+    
+
+    .loginStuff{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        ul{
+            display: flex;
+            align-items: center;
+            margin-bottom: 4em;
+            padding-left: 0;
+            
+            li{
+                list-style: none;
+                margin: 0 1.8em;
+                position: relative;
+            }
+
+            
+        }
+
+        p{
+            margin-top: -3em;
+            margin-bottom: 1.5em;
+            font-size: 0.8em;
+        }
+
+        .student{
+            
+            content: 'Student';
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        form{
+            width: 60%;
+            input{
+                position: relative;
+                display: block;
+                border-radius: .4em;
+                border-width: thin;
+                margin-bottom: 1.5em;
+            }
+
+            .uInput{
+                width: 90%;
+                height: 2em;
+                margin-bottom: 3em;
+            }
+
+            label {
+                align-items: center;
+                text-transform: uppercase;
+            }
+
+            .subButton{
+                height: 3rem;
+                width: 5rem;
+            }
+        }
+
+        
+    }
+
+    button {
+        border-radius: .2em;
+        border: none;
+        background-color: transparent;
+        &:hover{
+            background: -webkit-linear-gradient(top, hsla(206,70%,70%,0) 60%,rgba(179, 113, 189, 0.251) 100%);
+        }
+    }
+    
+    .selected{
+        border-bottom: 2px solid $accent-color;
+    }
+
+}
+
+
+
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+.imgContainer{
+    animation:  1 slideInFromLeft;
+}

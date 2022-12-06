@@ -1,0 +1,33 @@
+$accent-color: #805eb6;
+
+.App{
+    font-family: 'Helvetica Neue', 'Open Sans';
+    align-items: center;
+    margin: 0% 5vw;
+}
+
+@media screen and (max-width: 50rem) {
+    .App{
+        margin: 0% 2vw;
+    }
+    
+}
+
+button{  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer; 
+
+    min-width: fit-content;
+    min-height: 3em;
+    padding: 0 1.5em;
+    border-radius: .5em;
+    border-width: thin;
+
+    &:hover {
+        background:hsla(69, 14%, 54%, 0.364);
+        transition: 0.7s;
+    }
+}
